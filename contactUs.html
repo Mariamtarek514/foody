@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head> 
+<body>
+
+        <!-- ***************************** start nav section ********************************* -->
+
+        <nav class="navbar navbar-expand-lg navigat navbar-dark bg-danger">
+            <span class="navbar-brand" >Foody</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon icon "></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end text-right text-uppercase "id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">menu</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contactUs.html">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ***************************** start nav section ********************************* -->
+        <!-- ***************************** start header section ********************************* -->
+        <section class="contactHeader mb-5">
+            <p>
+                contact us
+            </p>
+        </section>
+        <!-- ***************************** end header section ********************************* -->
+        <!-- ***************************** start map section ********************************* -->
+        <section class="contact">
+            <div class="container">
+                <h2 class="py-3" style="color: var(--main-color);">Contact Details</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.4090643702307!2d30.82993974924362!3d28.134032782531758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b21374838d317%3A0xf2f5d88b202bad22!2sMinia%20British%20School!5e0!3m2!1sen!2seg!4v1601245629136!5m2!1sen!2seg" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="row location-box px-2">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>main location</h3>
+                        </div>
+                        
+                        <p class="pl-2">123 Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <h3>email</h3>
+                        </div>
+                        
+                        <p class="pl-2">example@gmail.com</p>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <h3>phone</h3>
+                        </div>
+                        <p class="pl-2">+20 123 456 7895</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***************************** end map section ********************************* -->
+        <!-- ***************************** start form section ********************************* -->
+        <section class="connection my-5">
+            <div class="container">
+                <div class="row">
+                    <figure class="col-md-6 col-lg-6"></figure>
+                    <form name="myForm" class="col-lg-6 col-md-6 col-12 py-4" onsubmit="return validateForm()" method="post">
+                        <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="fName">first name</label>
+                                    <input type="text" class="form-control" name="fName" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="lName">last name</label>
+                                    <input type="text" class="form-control" name="lName" required>
+                                </div>
+                        </div>
+                        <div class="alert alert-danger" id="error_messag">
+                           
+                        </div>
+                        
+                            <div class="form-group">
+                                <label for="email">email</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="details" required></textarea>
+                            </div>
+                            <input type="submit" class="btn btn-danger" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- ***************************** end form section ********************************* -->
+         <!-- ***************************** start footer section ********************************* --> 
+         <footer class=" bg-danger pt-5 pb-3">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h4>foody</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur pariatur id recusandae est, laudantium rerum?
+                        </p>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h4>contact us</h4>
+                        <ul>
+                            <li>123 Lorem ipsum dolor sit amet.</li>
+                            <li>+20 123 456 7895</li>
+                            <li>example@gmail.com</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <h4>opening hours</h4>
+                        <ul>
+                            <li>Monday ......... closed</li>
+                            <li>Tue-Fri ......... 10am to 12pm</li>
+                            <li>Sat-Sun ......... 8am to 11pm</li>
+                            <li>Holidays ....... 10am to 12pm</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center text-white">
+                        Copyright &copy; 2020 All rights reserved to Mariam Tarek
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- ***************************** end footer section ********************************* --> 
+
+
+    <!-- java script links -->
+    <script src="js/jquey.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/main.js"></script>
+</body>  
+</html>
